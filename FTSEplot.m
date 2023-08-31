@@ -1,0 +1,10 @@
+H_benchmark_1 = importdata("A_HUKX.L.csv");
+ I_bench_1 = H_benchmark.data(1:210,5);
+H_benchmark_2 = importdata("MIDD.L.csv");
+ I_bench_2 = H_benchmark.data(1:210,5);
+xlabel('Weeks');
+ylabel('Index Price');
+title('FTSE100 ETF 2019 Aug —— 2023 Aug');
+plot(I_bench_1,'*-','color','red');
+legend('FTSE100');
+grid on; 
